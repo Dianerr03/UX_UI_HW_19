@@ -1,0 +1,381 @@
+ header {
+     display: flex;
+     justify-content: space-between;
+     box-shadow: 0px 2px 0px #cecece;
+     padding: 0px 16px 0px 16px;
+ }
+
+ body {
+     background-color: white;
+     margin: 0;
+     margin-left: auto;
+     margin-right: auto;
+     /* max-width: 1200px; */
+     font-family: 'Open Sans', sans-serif, Arial, Helvetica, sans-serif;
+     color: #202020;
+ }
+
+ section {
+     max-width: 1200px;
+     margin: auto;
+ }
+
+ .navigation {
+     justify-content: center;
+ }
+
+ .center-align {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ .logo {
+     display: inline-block;
+     padding: 15px 15px;
+     padding-left: 20px;
+ }
+
+ .LogoH {
+     float: left;
+ }
+
+ nav {
+     margin: 10px;
+     padding-right: 10px;
+     align-items: center;
+     float: right;
+ }
+
+ .AboutMeImg {
+     padding-top: 35px;
+     padding-left: 35px;
+     padding-bottom: 35px;
+ }
+
+ h1 {
+     font-family: 'Lato', sans-serif;
+     color: #202020;
+     justify-content: center;
+ }
+
+ ul {
+     margin-block-start: 1em;
+     margin-block-end: 1em;
+     margin-inline-start: 0px;
+     margin-inline-end: 0px;
+ }
+
+ nav ul {
+     /* flex-direction: row;   */
+     list-style-type: none;
+     text-decoration: none;
+     align-items: right;
+ }
+
+ li {
+     display: inline-block;
+     /* padding: 11px 11px;
+    background-color: white;
+    color: black;
+    border: 2px solid #202020;
+    text-align: center; */
+     width: 140px;
+ }
+
+ .nav-button-active {
+    background-color: #00AAC6;
+    color: #ffffff;
+    border: 2px solid #00AAC6;
+    padding: 11px 11px;
+    text-align: center;
+    width: 100%;
+ }
+
+ .nav-button {
+     padding: 11px 11px;
+     background-color: white;
+     color: black;
+     border: 2px solid #202020;
+     text-align: center;
+     width: 100%;
+ }
+
+ .left-div {
+     text-align: center;
+ }
+
+ .left-div,
+ .right-div {
+     display: inline-block;
+     width: 45%;
+     vertical-align: top;
+ }
+
+ .container {
+     display: inline-block;
+     gap: 20px;
+     padding: 10px;
+     align-items: left;
+     text-align: left;
+ }
+
+ .column {
+     /* float: left; */
+     width: 20%;
+     /* padding: 20px; */
+     padding-left: 35px;
+     padding-bottom: 15px;
+     height: 286px;
+     /* background-color: #00AAC6; */
+     align-items: center;
+     justify-content: space-between;
+     color: #ffffff
+ }
+
+ .row:after {
+     content: "";
+     display: table;
+     clear: both;
+     padding: 15px;
+     justify-content: center;
+ }
+
+ .row {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-bottom: 35px;
+     background-image: url("../Images/ToolsBG.png");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     max-width: 1200px;
+     margin-left: auto;
+     margin-right: auto;
+     text-align: left;
+ }
+
+ footer {
+     background-color: #F4BF2A;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     justify-content: center;
+     padding: 16px 16px 16px 16px;
+     height: 180px;
+     font-family: 'Open Sans', sans-serif, Arial, Helvetica, sans-serif;
+     color: #202020;
+     margin-top: 35px;
+ }
+
+ .containerF {
+     display: inline-block;
+     flex-direction: row;
+     align-items: center;
+     text-align: center;
+     width: 30%;
+ }
+
+ .containerF a {
+     margin: auto;
+     display: inline-block;
+ }
+
+
+ /* .center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px 16px 16px 16px;
+  } */
+
+ .heroImg {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding-bottom: 35px;
+     width: 100%;
+ }
+
+ .divider {
+     box-shadow: 0px 2px 0px #000000;
+     height: 1px;
+     border: none;
+     display: inline-block;
+ }
+
+ .grid-container {
+     display: grid;
+     gap: 20px;
+     padding: 20px;
+     align-items: center;
+     text-align: center;
+ }
+
+ .grid-container>.cards {
+     text-align: center;
+     font-size: 30px;
+ }
+
+ .col2 {
+     grid-template-columns: auto auto;
+ }
+
+ .col3 {
+     grid-template-columns: auto auto auto;
+ }
+
+ .margin-col {
+     grid-template-columns: auto 75% auto;
+ }
+
+ .cardContainer {
+     padding-left: 30px;
+     padding-right: 30px;
+ }
+
+ .cards {
+     /* display: contents; */
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+     transition: 0.3s;
+     height: 700px;
+     background-color: #00AAC6;
+     transform-origin: center center;
+ }
+
+ .cards img {
+     width: 100%;
+     height: 60%;
+     object-fit: cover;
+ }
+
+ .cardText {
+     margin: 15px;
+     margin-left: auto;
+     margin-right: auto;
+     /* max-width: 1200px; */
+     font-family: 'Open Sans', sans-serif, Arial, Helvetica, sans-serif;
+     font-size: medium;
+     color: #ffffff;
+     text-align: left;
+     /* padding-left: 30px;
+    padding-right: 30px; */
+ }
+
+ h2 {
+     font-family: 'Lato', sans-serif;
+     font-size: 30px;
+     color: #ffffff;
+     text-align: left;
+     /* padding-left: 30px; */
+     padding-right: 30px;
+ }
+
+ a {
+     color: #F4BF2A;
+     cursor: pointer;
+     text-decoration: underline;
+ }
+
+ .default-button {
+     background-color: #F4BF2A;
+     border-radius: 50px;
+     color: rgb(0, 0, 0);
+     padding: 15px 32px;
+     font-size: 16px;
+     float: left;
+     margin: 0;
+ }
+
+ .default-button:hover {
+     background-color: #c49000;
+     padding: 15px 32px;
+     text-decoration: none;
+     font-size: 16px;
+     color: #ffffff;
+     float: left;
+     margin: 0;
+ }
+
+ .cards.scale {
+     transform: scale(1.2);
+     z-index: 1;
+ }
+
+ .cards.shift-left {
+     transform: translateX(-20%);
+ }
+
+ .cards.shift-right {
+     transform: translateX(20%);
+ }
+
+ .cards.shift-up {
+     transform: translateY(-20%);
+ }
+
+ .cards.shift-down {
+     transform: translateY(20%);
+ }
+
+ @media (max-width: 1800px) {
+     .my-element {
+         width: 100%;
+     }
+ }
+
+ @media screen and (max-width: 900px) {
+     .col2 {
+         grid-template-columns: auto;
+     }
+
+     .cards {
+         height: auto;
+         padding-bottom: 20px;
+     }
+
+     .my-element {
+         width: 100%;
+     }
+
+     .row {
+         background-image: url("../Images/ToolsBGMobile.png");
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: contain;
+         flex-direction: column;
+     }
+
+     .right-div {
+         display: auto;
+         width: 45%;
+         /* vertical-align: top; */
+     }
+
+     .column {
+         padding: 45px;
+         padding-top: 100px;
+         width: 200px;
+         height: 286px;
+         margin-top: 25px;
+     }
+
+     .skills-padding {
+         padding-top: 100px;
+         padding-bottom: 100px;
+     }
+
+     .container {
+         display: block;
+     }
+
+     .left-div,
+     .right-div {
+         width: 90%;
+     }
+
+     .col3 {
+         grid-template-columns: auto auto auto;
+     }
+ }
