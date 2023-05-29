@@ -2,13 +2,9 @@ console.log("my file is loading");
 
 const container = document.querySelector('.grid-container');
 const cards = document.querySelectorAll('.cards');
-console.log(container.addEventListener)
 
 cards.forEach(card => {
-    console.log("current: " + card)
-
     card.addEventListener('mouseover', function (event) {
-        console.log("mouseover")
         card.classList.add('scale');
 
         const hoveredIndex = Array.from(cards).indexOf(card);
@@ -41,7 +37,6 @@ cards.forEach(card => {
     });
 
     card.addEventListener('mouseout', function (event) {
-        console.log("it's loading")
         card.classList.remove('scale');
         for (let i = 0; i < cards.length; i++) {
             cards[i].classList.remove('shift-up', 'shift-down', 'shift-left', 'shift-right');
